@@ -25,4 +25,6 @@ jobs:
     steps:
       - checkout
       - npm_install
-      - yarn build
+      - run:
+          name: build
+          command: yarn build
